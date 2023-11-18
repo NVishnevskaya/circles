@@ -30,8 +30,11 @@ class Example(QMainWindow):
 
     def draw_flag(self, qp):
         qp.setBrush(QColor(255, 251, 0))
-        d = randrange(10, 300)
-        qp.drawEllipse(50, 70, d, d)
+        for  _ in range(randrange(1, 12)):
+            d = randrange(10, 300)
+            x = randrange(50, 401)
+            y = randrange(70, 351)
+            qp.drawEllipse(x, y, d, d)
 
 
 if __name__ == '__main__':
