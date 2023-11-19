@@ -30,7 +30,7 @@ class Example(QMainWindow):
 
     def draw_flag(self, qp):
         qp.setBrush(QColor(255, 251, 0))
-        for  _ in range(randrange(1, 12)):
+        for _ in range(randrange(1, 12)):
             d = randrange(10, 300)
             x = randrange(50, 401)
             y = randrange(70, 351)
